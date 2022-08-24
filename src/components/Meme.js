@@ -16,8 +16,6 @@ function Meme() {
       .then((data) =>setAllMemes(data.data.memes));
   }, []);
 
-  // console.log("測試",allMeme.data.memes)
-
   function getMemeImage() {
     const randomNumber = Math.floor(Math.random() * allMemes.length);
     const url = allMemes[randomNumber].url;
